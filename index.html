@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Local Storage Friend Keeper</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+	<div class="container">
+		<h1>Friend Keeper</h1>
+	</div>
+</header>
+<main>
+	<section class="form-section">
+		<div class="container">
+			<h2>Add A Friend</h2>
+			<form action="" id="friendsForm">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name">
+				<fieldset>
+					<legend>What is their gender?</legend>
+					<input id="female" type="radio" name="gender" value="female">
+					<label for="female">Female</label>
+					<input id="male" type="radio" name="gender" value="male">
+					<label for="male">Male</label>
+					<input id="nonBinary" type="radio" name="gender" value="nonBinary">
+					<label for="nonBinary">Non-Binary</label>
+				</fieldset>
+				<label for="duration">Length of Friendship</label>
+				<input type="text" id="duration" name="duration">
+				<label for="faveAttribute">Favorite Attribute</label>
+				<input type="text" id="faveAttribute" name="faveAttribute">
+				<label for="leastFaveAttribute">Least Favorite Attribute</label>
+				<input type="text" id="leastFaveAttribute" name="leastFaveAttribute">
+				<input id="submit" type="submit">
+
+			</form>
+			<span class="error">
+				You must enter a value for all the form inputs.
+			</span>
+		</div>
+	</section>
+	<section class="friends-section">
+		<div class="container">
+			<h2>Your Friends</h2>
+			<ul class="friends"></ul>
+		</div>
+	</section>
+</main>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
